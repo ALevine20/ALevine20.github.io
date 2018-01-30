@@ -1,0 +1,141 @@
+// CIS161 2.16.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>	//enables input and output
+
+
+
+
+int main() {
+	//declaring and initializing variables
+	int number1{ 0 }; //first int to add
+	int number2{ 0 }; //second int to add
+	int sum{ 0 }; //sum of num1 and num2
+	int product{ 0 }; // product of num1 and num2
+	int difference{ 0 }; //difference of num1 and num2
+	int quotient{ 0 }; //qotient of num1 and num2
+
+	std::cout << "Enter First Integer: "; //user imputs data
+	std::cin >> number1; // read from user into number1
+
+	std::cout << "Enter Second Integer: "; //user inputs data
+	std::cin >> number2; //reads from user into number2
+
+	sum = number1 + number2 // add the numbers; store result in sum
+	; product = number1 * number2 //multipy the numbers
+	; difference = number1 - number2 //subtract the two numbers
+	; quotient = number1 / number2 //divide two numbers
+
+		
+
+	; std::cout << "Sum is " << sum << std::endl; //display sum; end line
+	; std::cout << "Product is " << product << std::endl; //display product
+	; std::cout << "Difference is " << difference << std::endl; //display difference
+	; std::cout << "Quotient is " << quotient << std::endl; //display quotient
+
+} //end function main
+
+// CIS 161 2.20.cpp : Defines the entry point for the console application.
+//
+
+#include<iostream>	//enables input and output
+
+
+
+
+int main() {
+	//declaring and initializing variables
+	int radius{ 0 }; //first int to add
+	int diameter{ 0 }; //product of radius * 2
+	int circumference{ 0 }; //product of radius * pi * 2
+	int area{ 0 }; //product of radius * 3.14159 ^2
+
+
+	std::cout << "Enter Radius: "; //user imputs data
+	std::cin >> radius; // read from user into number
+
+	diameter = radius * 2 // multiply the numbers; store the numbers in radius
+		; circumference = (radius * 3.14159) * 2//multipy the numbers
+		; area = (radius * 3.14159) ^ 2 //multiply the two numbers
+
+
+		; std::cout << "Diameter is " << diameter << std::endl; //display diameter
+	; std::cout << "Circumference is " << circumference << std::endl; //display circumference
+	; std::cout << "Area is " << area << std::endl; //display area
+
+
+
+} //end function main
+
+// 2.28.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+
+using std::cout;
+using std::cin;
+
+int main() {
+	int number1{ 0 };
+	int number2{ 0 };
+	int number3{ 0 };
+	int number4{ 0 };
+	int number5{ 0 };
+	int y{ 0 };
+
+	; cout << "Enter five integers:"; //asks user for data
+	; cin >> number1 >> number2 >> number3 >> number4 >> number5; // read five integers
+
+	y = number1   %number2   %number3   %number4   %number5;
+
+
+	cout << "your integers are:" << y << std::endl;
+
+	return 0;
+}
+
+// 2.30.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>	//enables input and output
+
+using std::cout;
+using std::cin;
+
+int main(){
+	int BMI{ 0 };
+	int Underweight{ 0 };
+	int Normal{ 0 };
+	int Overweight{ 0 };
+	int Obese{ 0 };
+	int weight{ 0 };
+	int height{ 0 };
+
+	; cout << "Enter Weight"; // retrives weight of user
+	; cin >> weight;
+	; cout << "Enter Height in inches"; // retrives the height of the user
+	; cin >> height;
+	
+	BMI = (weight * 703) / (height *height)
+		; Underweight = 18.5
+		; Normal = 18.5 - 24.9
+		; Overweight = 25 - 29.9
+		; Obese = 30
+
+		; cout << "Your Body Mass Index is" << BMI << std::endl;
+	; cout << "BMI Values" << std::endl;
+	; cout << "Underweight: less than 18.5" << std::endl;
+	; cout << "Normal: between 18.5 and 24.9" << std::endl;
+	; cout << "Overweight: between 25 and 25.9" << std::endl;
+	; cout << "Obese: over 30" << std::endl;
+
+
+
+
+		; return 0;
+}
+
+
