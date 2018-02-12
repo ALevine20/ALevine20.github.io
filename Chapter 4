@@ -1,0 +1,117 @@
+// 4.13.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+
+int main() {
+	unsigned int mpg{ 0 };
+	unsigned int total_mpg{ 0 };
+
+
+	cout << "Enter miles driven (-1 to quit):";
+	cout << "Enter gallons used:";
+	int miles;
+	cin >> miles;
+	int gallons:
+	cin >> gallons;
+
+	while (miles != -1) {
+		mpg = miles / gallons;
+
+		cout << "Enter miles driven (-1 to quit):";
+		cin >> miles;
+	
+
+	 }
+
+
+	return 0;
+}
+
+// 4.17.cpp : Defines the entry point for the console application.
+//
+
+#include <iostream>
+
+using namespace std;
+
+void main()
+{
+	int counter = 0;
+	int number = 0;
+	int largest = 0;
+
+	cout << "Please enter 10 numbers";
+
+	while (counter <= 10)
+	{
+		cout << "Number: ";
+		cin >> number;
+		counter;
+
+		if (number > largest)
+		{
+			largest = number;
+		}
+
+		else if (counter == 10)
+		{
+			cout << "The largest number was: " << number;
+			break;
+		}
+	}
+}
+
+// 4.26.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "iostream"
+
+int main()
+
+{
+	int n, i, j, f;
+
+	printf("Insert a number (1-20):\n");
+	scanf("%d", &n);
+
+
+
+	if ((n >= 1) && (n <= 20))
+	{
+
+		i = 0;
+		while (i < n)
+		{
+			i++;
+			j = 0;
+			while (j <= n)
+			{
+
+				if (((j > 1) & (j < n)) & ((i > 1) & (i < n)))
+				{
+					printf("  ");
+				}
+				else if ((j != 0) & (i != 0))
+				{
+					printf("* ");
+				}
+
+				j++;
+			}
+			printf("\n");
+
+		}
+	}
+	else
+		printf("the number must be between 1 and 20.\n");
+
+	return 0;
+}
+
+
